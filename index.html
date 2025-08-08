@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NormieDaGreat - Portfolio</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f0f4f8;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+    header {
+        background: linear-gradient(90deg, #6a11cb, #2575fc);
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.8rem;
+        letter-spacing: 2px;
+    }
+    header p {
+        font-size: 1.2rem;
+        margin-top: 8px;
+        font-style: italic;
+    }
+    main {
+        max-width: 900px;
+        margin: 40px auto;
+        background: white;
+        padding: 30px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        border-radius: 12px;
+    }
+    .section {
+        margin-bottom: 40px;
+    }
+    .section h2 {
+        border-bottom: 3px solid #2575fc;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+        color: #2575fc;
+    }
+    .contact {
+        font-size: 1.1rem;
+        background: #e6f0ff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .contact strong {
+        color: #6a11cb;
+    }
+    .images-row {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .images-row img {
+        max-width: 280px;
+        border-radius: 15px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        object-fit: cover;
+        height: 180px;
+    }
+    .images-row img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+    footer {
+        text-align: center;
+        padding: 15px;
+        background: #2575fc;
+        color: white;
+        font-size: 0.9rem;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    @media (max-width: 600px) {
+        .images-row {
+            flex-direction: column;
+            align-items: center;
+        }
+        .images-row img {
+            max-width: 80%;
+            height: auto;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>NormieDaGreat</h1>
+    <p>Blender Enthusiast & Web Developer in Training</p>
+</header>
+
+<main>
+    <section class="section intro">
+        <h2>About Me</h2>
+        <p>Hello! I’m NormieDaGreat, a beginner in web development and a passionate Blender user. I love creating 3D models and animations and I’m always excited to learn new skills and improve my craft.</p>
+    </section>
+
+    <section class="section skills">
+        <h2>My Blender Skills</h2>
+        <p>I work on 3D modeling, texturing, and animation in Blender. Whether it’s game assets, animated characters, or cool visual effects, I’m eager to develop my skills and take on projects that challenge me.</p>
+
+        <div class="images-row">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="3D Modeling Workspace" title="3D Modeling Workspace" />
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Animation Workflow" title="Animation Workflow" />
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Creative Design" title="Creative Design" />
+        </div>
+    </section>
+
+    <section class="section contact">
+        <h2>Contact Me</h2>
+        <p>If you want to chat about Blender, web development, or just want to connect, feel free to reach me on Discord:</p>
+        <p><strong>Discord: normiedagreat</strong></p>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 NormieDaGreat. All rights reserved.
+</footer>
+
+</body>
+</html>
